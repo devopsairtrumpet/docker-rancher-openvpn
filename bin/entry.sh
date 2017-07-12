@@ -73,7 +73,7 @@ dh easy-rsa/keys/dh2048.pem
 cipher AES-128-CBC
 auth SHA1
 server $VPNPOOL_NETWORK $VPNPOOL_NETMASK
-push "dhcp-option DNS $PUSHDNS"
+#push "dhcp-option DNS $PUSHDNS"
 push "dhcp-option SEARCH $PUSHSEARCH"
 push "route $ROUTE_NETWORK $ROUTE_NETMASK"
 $RANCHER_METADATA_API
